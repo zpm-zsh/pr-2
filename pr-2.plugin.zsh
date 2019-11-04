@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 DEPENDENCES_ZSH+=( zpm-zsh/colors )
 
-if (( $+function[zpm] )); then
+if (( $+functions[zpm] )); then
   zpm zpm-zsh/colors
 fi
 

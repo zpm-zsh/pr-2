@@ -1,8 +1,7 @@
 #!/usr/bin/env zsh
-DEPENDENCES_ZSH+=( zpm-zsh/colors )
 
-if (( $+functions[zpm] )); then
-  zpm zpm-zsh/colors,inline
-fi
+if (( $+functions[zpm] )); then #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
+  zpm zpm-zsh/colors #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
+fi #DO_NOT_INCLUDE_LINE_IN_ZPM_CACHE
 
-pr_2="%{$c[green]$c_bold%}%_>%{$c_reset%}"
+typeset -g pr_2="%{$c[green]$c_bold%}%_>%{$c_reset%}"
